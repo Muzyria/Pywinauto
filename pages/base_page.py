@@ -6,3 +6,4 @@ class BasePage:
         self.app = app
         self.window_app = app["Calculator"]
         self.window_app.wait("ready", timeout=5)
+
