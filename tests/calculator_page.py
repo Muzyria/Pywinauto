@@ -1,8 +1,10 @@
 from pages.standard_page import StandardPage
-
+import random
 
 def test_amount_simple_numbers(app):
     standard_page = StandardPage(app)
+    a = random.randint(1, 1000)
+    b = random.randint(1, 1000)
     result = standard_page.amount_numbers(5, 155)
     assert result == 160, "увы, не сложилось"
 
